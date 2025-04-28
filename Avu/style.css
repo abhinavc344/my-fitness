@@ -1,0 +1,579 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* For full viewport height */
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.tagline {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.navigation {
+    background-color: #34495e;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.navigation li {
+    display: inline;
+    margin: 0 25px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 30px;
+    text-align: left;
+    max-width: 95%;
+    margin: 0 auto;
+    flex: 1; /* Allow main content to take up available space */
+}
+
+.footer {
+    /* You'll need to add your footer styles here */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-social a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ff6b6b;
+}
+
+.footer-contact {
+    flex: 1;
+    text-align: right;
+}
+
+/* Specific page styles -  Move to separate files if needed */
+
+/* Home Page */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.highlight {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Activities Page */
+.activity-header {
+    font-size: 2em;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.activity-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.schedule-heading {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.activity-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 45%;
+}
+
+.activity-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-info {
+    padding: 20px;
+}
+
+.activity-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.activity-info p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Cart Page */
+.cart-heading {
+    font-size: 2em;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item .item-info {
+    flex: 1;
+    text-align: left;
+}
+
+.cart-item .item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item .item-quantity button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item .item-quantity button:hover {
+    background-color: #ddd;
+}
+
+.cart-item .item-quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.cart-item .remove-item {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item .remove-item:hover {
+    background-color: #d60000;
+}
+
+.cart-summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.cart-summary p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
+/* Diet and Equipment Pages */
+.shop-heading,
+.diet-heading {
+    font-size: 2em;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.product-box img {
+    width: 25%;
+    object-fit: contain;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.product-box .product-info {
+    width: 45%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-box .product-info h3 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.product-box .product-info p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.quantity-control {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-control button:hover {
+    background-color: #ddd;
+}
+
+.quantity-control input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.quantity-control .add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-control .add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Membership Page */
+.membership-heading {
+    font-size: 2.5em;
+    color: #ff6b6b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.membership-plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.membership-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.membership-card h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.membership-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.membership-card li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.membership-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.membership-card button:hover {
+    background-color: #45a049;
+}
+
+/* Staff Page */
+.banner-image {
+    width: 100%;
+    height: 36vh;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.staff-heading {
+    font-size: 2em;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.founder-heading {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.founder-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.founder-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.founder-achievements {
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+}
+
+.trainers-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trainer-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.trainer-info {
+    margin-left: 20px;
+}
+
+.trainer-name {
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.trainer-achievements {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Responsive adjustments */

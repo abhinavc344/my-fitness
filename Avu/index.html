@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FITNESS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="common.js"></script> -->
+    <script src="scrip.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.querySelector('.slider');
+            const slides = slider.querySelectorAll('img');
+            let currentIndex = 0;
+            const intervalTime = 3000;
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+            }
+
+            setInterval(nextSlide, intervalTime);
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">MY FITNESS</div>
+        <div class="tagline">Health is Wealth</div>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activity.html">Activities</a></li>
+            <li><a href="staff.html">Trainers</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdS_iXVvg_754m-zBBCGbtXm16dUODBaQNA&s"
+                alt="Fitness Image 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11ctTptOyt93NWDMv2tKrEzgW11PPP9QGZw&s"
+                alt="Fitness Image 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYf_Pskxhe1dwM4Lh3dYS9rpYdiTM6TvYWEQ&s"
+                alt="Fitness Image 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxwzLljDdi-9WguIalLrJhdzPhfkgMEpq-PA&s"
+                alt="Fitness Image 4">
+        </div>
+    </div>
+
+    <main class="main-content">
+        <p>Welcome to My Fitness! This is your starting point for a healthier life.</p>
+    </main>
+
+    <section class="section">
+        <h2 class="section-title">Unlock Your Potential</h2>
+        <p class="section-content">
+            At My Fitness, we believe that everyone has the potential to achieve their fitness goals. Whether you're just starting
+            your fitness journey or are a seasoned athlete, we provide the tools, resources, and support you need to succeed.
+            We offer a wide range of activities, from high-intensity training to Find the perfect program to help you reach
+            your goals.
+        </p>
+        <a href="membership.html" class="cta-button">Get Started Today</a>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Why Choose My Fitness?</h2>
+        <p class="section-content">
+            We're more than just a gym; we're a community. Here, you'll find:
+        </p>
+        <ul style="list-style-position: inside; text-align: left; margin-bottom: 20px;">
+            <li><span class="highlight">Expert Trainers:</span> Our certified trainers are dedicated to helping you achieve
+                your personal best.</li>
+            <li><span class="highlight">State-of-the-Art Equipment:</span> We offer the latest fitness equipment to maximize
+                your workout.</li>
+            <li><span class="highlight">Diverse Classes:</span> From yoga to Zumba, find the perfect class to fit your style.
+            </li>
+            <li><span class="highlight">Personalized Support:</span> We provide customized plans and ongoing support to keep
+                you motivated.</li>
+        </ul>
+        <p class="section-content">
+            Join us and discover a new level of fitness. We are committed to helping you achieve a healthier and happier life.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <ul>
+                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><a href="tel:+1234567890"><i class="fa fa-phone"></i> Phone: +123 456 7890</a></li>
+                <li><a href="mailto:info@myfitness.com"><i class="fa fa-envelope"></i> Email: info@myfitness.com</a></li>
+                <li>
+                    <p>123 Fitness Lane<br>
+                        City, State, ZIP</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            &copy; 2025 My Fitness | All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

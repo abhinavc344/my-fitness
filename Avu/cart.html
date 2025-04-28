@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrip.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MY FITNESS</div>
+        <div class="tagline">Health is Wealth</div>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ativity.html">Activities</a></li>
+            <li><a href="staff.html">Trainers</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2 class="cart-heading">Your Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="..." alt="Product Image">
+                <div class="item-info">
+                    <h3>Product Name</h3>
+                    <p>Price: Rs 45.00</p>
+                </div>
+                <div class="item-quantity">
+                    <button class="minus-btn">-</button>
+                    <input type="number" value="1" min="1" max="10" class="quantity-input">
+                    <button class="plus-btn">+</button>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Subtotal: <span class="subtotal-price">Rs 45.00</span></p>
+            <p>Shipping: <span class="shipping-price"></span></p>
+            <p>Total: <span class="total-price"></span></p>
+            <button class="checkout-button">Checkout</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-columns">
+            <div class="footer-social">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+                <a href="#" title="X (Twitter)"><i class="fab fa-x-twitter"></i><span>X</span></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube\"></i><span>YouTube</span></a>
+            </div>
+            <div class="footer-contact">
+                <p>Address: 123 Fitness Lane, Anytown, CA 12345</p>
+                <p>Email: info@myfitness.com</p>
+                <p>Contact: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 My Fitness. All rights reserved.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
